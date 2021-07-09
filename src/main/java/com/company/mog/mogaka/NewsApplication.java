@@ -22,12 +22,19 @@ public class NewsApplication {
                 .header("newyork_times", "api.nytimes.com")
                 .asJson();
 
+        HttpResponse<JsonNode> response2 = Unirest.get("")
+                .header("", "")
+                .header("", "")
+                .asJson();
+
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         JsonParser jp = new JsonParser();
         JsonElement je = jp.parse(response.getBody().toString());
         JsonElement je1 = jp.parse(response1.getBody().toString());
+        JsonElement je2 = jp.parse(response2.getBody().toString());
         String prettyJsonString = gson.toJson(je);
         String prettyJsonString1 = gson.toJson(je1);
+        String prettyJsonString2 = gson.toJson(je2);
 
         System.out.println("Google News ...\n");
         System.out.println(prettyJsonString);
