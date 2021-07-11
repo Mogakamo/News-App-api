@@ -1,17 +1,13 @@
 package com.news.nyt;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
-import kong.unirest.HttpResponse;
-import kong.unirest.JsonNode;
-import kong.unirest.Unirest;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.net.URLEncoder;
 
+@SpringBootApplication
 public class NewsApplication {
     public static void main(String[] args) {
-
+        SpringApplication.run(NewsApplication.class, args);
     }
 }
