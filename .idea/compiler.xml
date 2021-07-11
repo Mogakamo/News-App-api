@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="News API" />
-        <module name="news-api" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="news-api" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>
